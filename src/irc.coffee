@@ -183,7 +183,7 @@ class IrcBot extends Adapter
       certExpired: options.certExpired
       floodProtection: @unfloodProtection(options.unflood),
       floodProtectionDelay: @unfloodProtectionDelay(options.unflood),
-      sasl: true
+      sasl: false
 
     client_options['channels'] = options.rooms unless options.nickpass
 
